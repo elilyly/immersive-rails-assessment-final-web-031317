@@ -1,0 +1,4 @@
+<h1>Appearance Ratings</h1>
+<% @appearances.each do |appearance| %>
+<p>Rating of <%= link_to appearance.rating, edit_appearance_path%>, for <%= appearance.guest.name %></p>
+<% end %>
